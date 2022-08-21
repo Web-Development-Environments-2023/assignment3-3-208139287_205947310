@@ -92,6 +92,7 @@
 
       <b-button type="reset" variant="danger">Reset</b-button>
       <b-button
+        @click="onRegister"
         type="submit"
         variant="primary"
         style="width:250px;"
@@ -175,14 +176,14 @@ export default {
     // console.log($v);
   },
   methods: {
-    validateState(param) {
+    validateState: function(param) {
       const { $dirty, $error } = this.$v.form[param];
       return $dirty ? !$error : null;
     },
     async Register() {
       try {
         const response = await this.axios.post(
-          "https://test-for-3-2.herokuapp.com/user/Register",
+          "http://127.0.0.1:8080/Register",
           {
             username: this.form.username,
             password: this.form.password

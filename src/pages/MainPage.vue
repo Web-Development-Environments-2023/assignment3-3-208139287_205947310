@@ -1,9 +1,10 @@
 <template>
   <div class="container">
     <h1 class="title">Main Page</h1>
-    <RecipePreviewList title="Randome Recipes" class="RandomRecipes center" />
-    <router-link v-if="!$root.store.username" to="/login" tag="button">You need to Login to vue this</router-link>
-    {{ !$root.store.username }}
+    <RecipePreviewList :showNewRandomRecipes="true" title="Randome Recipes" class="RandomRecipes" center />
+    
+    <router-link id="btn1" v-if="!$root.store.username" to="/login" tag="b-button">You need to Login to vue this</router-link>
+    <!-- {{ !$root.store.username}} -->
     <RecipePreviewList
       title="Last Viewed Recipes"
       :class="{
@@ -13,11 +14,11 @@
       }"
       disabled
     ></RecipePreviewList>
-    <!-- <div
+    <div
       style="position: absolute;top: 70%;left: 50%;transform: translate(-50%, -50%);"
     >
-      Centeredasdasdad
-    </div>-->
+      <!-- Centeredasdasdad -->
+    </div>
   </div>
 </template>
 
@@ -25,12 +26,21 @@
 import RecipePreviewList from "../components/RecipePreviewList";
 export default {
   components: {
-    RecipePreviewList
+    RecipePreviewList,
   }
 };
 </script>
 
 <style lang="scss" scoped>
+#btn1 {
+  color:black;
+  width: 290px;
+  background-color:lightyellow;
+  border-color:forestgreen;
+  border-width: 4.5px;
+  font-weight:bolder;
+}
+
 .RandomRecipes {
   margin: 10px 0 10px;
 }
