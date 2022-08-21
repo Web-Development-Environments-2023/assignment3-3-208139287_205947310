@@ -2,6 +2,12 @@ import Vue from "vue";
 import App from "./App.vue";
 import VueAxios from "vue-axios";
 import axios from "axios";
+axios.defaults.withCredentials = true;
+import VueCookies from "vue-cookies"
+Vue.use(VueCookies);
+
+import { BootstrapVue } from 'bootstrap-vue'
+Vue.use(BootstrapVue)
 
 import routes from "./routes";
 import VueRouter from "vue-router";

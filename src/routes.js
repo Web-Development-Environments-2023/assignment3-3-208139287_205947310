@@ -12,6 +12,7 @@ const routes = [
     name: "register",
     component: () => import("./pages/RegisterPage"),
   },
+ 
   {
     path: "/login",
     name: "login",
@@ -26,6 +27,11 @@ const routes = [
     path: "/recipe/:recipeId",
     name: "recipe",
     component: () => import("./pages/RecipeViewPage"),
+  },
+  {
+    path: "/about",
+    name: "about",
+    component: () => import("./pages/About"),
   },
   {
     path: "*",
