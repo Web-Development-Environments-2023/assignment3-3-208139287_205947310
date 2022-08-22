@@ -17,8 +17,8 @@
     <ul align = "center" type="none">
         <li><a href="https://tairsalman.github.io/pacman/">Pacman</a></li>
         <li><a href="https://web-development-environments-2022.github.io/assignment1-205466378/">Mazal's third age websits</a></li>
-        <li><a href="https://web-development-environments-2022.github.io/assignment1-205466378/">Tair's third age websits</a></li>
-        <li><a href="https://web-development-environments-2022.github.io/assignment1-205466378/">Raz's third age websits</a></li>
+        <li><a href="https://web-development-environments-2022.github.io/205947310/">Tair's third age websits</a></li>
+        <li><a href="https://web-development-environments-2022.github.io/208139287/">Raz's third age websits</a></li>
     </ul>
     <br>
     <br>
